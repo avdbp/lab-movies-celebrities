@@ -1,0 +1,25 @@
+<h1>Películas</h1>
+
+<div class="movies-list">
+  <table class="table" >
+    <tr class="tr" >
+      <th class="th">Título</th>
+      <th class="th">Género</th>
+      <th class="th">Trama</th>
+      <th class="th">Elenco</th>
+    </tr>
+    {{#each movies}}
+    <tr class="tr" >
+      <td class="td" > {{this.title}}<br/><a href="/movies/{{this._id}}" style="text-decoration: none;"> click para + Info</a></td>
+      <td class="td">{{this.genre}}</td>
+      <td class="td">{{plot}}</td>
+<td class="td">
+        {{#each this.cast}}
+          {{this.celebrityName}}
+        {{/each}}
+      </td></td>
+    {{/each}}
+  </table>
+
+
+ 

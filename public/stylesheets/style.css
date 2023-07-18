@@ -1,8 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap');
+
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(/images/cm.webp);
+  font-family: 'Changa', sans-serif;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(196, 220, 236);
+  text-decoration: none;
+
 }
 
 a {
-  color: #00b7ff;
+  color: #0a0a0a;
+}
+.top-bar {
+  text-align: center;
+  background-image: url(/images/estrellas.png);
+  background-color:  #d5af05;
+  opacity: .7;
+  width: 100%;
+  border-bottom: 2px solid rgb(172, 168, 168);
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+header nav {
+  font-family: 'Changa', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  display:inline-block;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  color:#f7f9f9;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: #f7f9f9;
+  margin: 10px 0px 10px 60px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+ 
+}
+
+li a {
+  display: block;
+  color: #0a0b0b;
+  text-decoration: none;
+}
+li :hover{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+
+}
+
+.label {
+  font-size: 20px;
+  margin-top: 15px;
+}
+h1 {
+  text-align: center;
+  font-size: 35px;
+}
+h2{
+  font-size: 25px;
+  text-align: center;
+}
+h3{
+  font-size: 20px;
+  text-align: center;
+}
+h4{
+  font-size: 18px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+}
+.button-add {
+  background-color: #070707;
+  color: #d5af05;
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 25px;
+  border: none;
+
+}
+
+.th {
+  text-decoration:wavy ;
+  width: 200px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #050505;
+  color: #d5af05;
+  border-bottom: solid thin black;
+  padding: 15px;}
+
+.td {
+  text-decoration:wavy ;
+  text-align: center;
+  background-color: white;
+  opacity: .7;
+  font-size: 20px;
+  color: rgb(6, 6, 6);
+  border: solid thin rgb(214, 214, 212);
+  padding: 10px;
+}
+
+.movie-detail {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,0 +1,24 @@
+<h1>Agregar Películas a nuesta Base de Datos</h1>
+<form  method="POST">
+  <div class="container-form">
+    
+    <label for="title" class="label">Titulo:</label>
+    <input type="text" class="form-control" id="title" name="title" required>  
+     
+    <label for="genre" class="label">Género:</label>
+    <input type="text" class="form-control" id="genre" name="genre" required>
+    
+    <label for="plot" class="label"></label>Trama:</label>
+    <textarea id="plot" class="form-control" name="plot" required></textarea>
+    
+    <label for="cast" class="label">Elenco:</label>
+    <select  id="cast" class="form-control" name="cast" multiple>
+    {{#each celebrities}}
+      <option value="{{this._id}}">{{this.celebrityName}}</option>
+    {{/each}}
+  </select>
+  
+  </div>
+  <button type="submit" class="button-add">Agregar una Película</button>
+</form>
+

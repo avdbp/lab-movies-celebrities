@@ -1,0 +1,16 @@
+<h1>Celebridades</h1>
+
+<div class="celebrities-list">
+  <table class="table" >
+    <tr class="tr" >
+      <th class="th">Celebridad</th>
+      <th class="th">Ocupación</th>
+      <th class="th">Slogan</th>
+    </tr>
+    {{#each celebrities}}
+    <tr class="tr" >
+      <td class="td" >{{celebrityName}}</td>
+      <td class="td">{{occupation}}</td>
+      <td class="td">{{catchPhrase}}</td>
+    {{/each}}
+  </table>

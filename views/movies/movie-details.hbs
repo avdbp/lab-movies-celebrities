@@ -1,0 +1,22 @@
+<h1>Detalles de la Película</h1>
+
+<div class="movie-detail">
+  <h1>Título:</h1><h2>{{movie.title}}</h2><br/>
+  <h2>Género: </h2> <p>{{movie.genre}}</p>
+  <h2>Trama:</h2> <p>{{movie.plot}}</p>
+  
+  <h2>Elenco:</h2>
+  <ul>
+    {{#each movie.cast}}
+      <h3>{{this.celebrityName}}</h3> <h4> Ocupación: {{this.occupation}} - Slogan: {{this.catchPhrase}}</h4>
+    {{/each}}
+  </ul>
+
+  <form action="/movies/{{movie._id}}/delete" method="POST">
+    <button type="submit" class="button-add">Eliminar Película</button>
+  </form>
+  <form action="/movies/{{movie._id}}/edit" method="GET">
+    <button type="submit" class="button-add">Editar Película</button>
+  </form>
+</div>
+</div>
